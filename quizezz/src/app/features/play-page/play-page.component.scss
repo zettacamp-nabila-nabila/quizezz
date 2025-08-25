@@ -1,0 +1,11 @@
+.play-page {
+  @apply tw-space-y-3;
+}
+
+.play-page__header {
+  @apply tw-flex tw-justify-between tw-items-center;
+}
+
+.play-page__progress {
+  @apply tw-text-white tw-bg-black/30 tw-rounded-full tw-px-3 tw-py-1 tw-text-sm;
+}

@@ -1,0 +1,9 @@
+.score-strip {
+  @apply tw-items-center tw-justify-between;
+}
+.score-strip__name {
+  @apply tw-text-sm tw-text-gray-200;
+}
+.score-strip__score {
+  @apply tw-text-sm tw-text-gray-200;
+}

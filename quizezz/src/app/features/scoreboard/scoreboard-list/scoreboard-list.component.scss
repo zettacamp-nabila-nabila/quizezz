@@ -1,0 +1,32 @@
+.scoreboard-list {
+  @apply tw-bg-white tw-border tw-border-gray-200 tw-rounded-2xl tw-overflow-hidden;
+}
+
+.scoreboard-list__head {
+  @apply tw-flex tw-justify-between tw-items-center
+           tw-px-4 tw-py-2 tw-border-b tw-border-gray-200
+           tw-text-xs tw-text-gray-600;
+}
+
+.scoreboard-list__th {
+  @apply tw-basis-1/3;
+}
+.scoreboard-list__th--right {
+  @apply tw-text-right;
+}
+
+.scoreboard-list__row {
+  @apply tw-flex tw-justify-between tw-items-center
+           tw-px-4 tw-py-3 tw-border-b tw-border-gray-100
+           last:tw-border-b-0;
+}
+
+.scoreboard-list__rank {
+  @apply tw-basis-1/3 tw-font-bold;
+}
+.scoreboard-list__name {
+  @apply tw-basis-1/3;
+}
+.scoreboard-list__score {
+  @apply tw-basis-1/3 tw-text-right tw-font-bold;
+}

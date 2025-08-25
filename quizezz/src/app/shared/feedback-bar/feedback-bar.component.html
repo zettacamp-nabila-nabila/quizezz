@@ -1,0 +1,14 @@
+<div
+  *ngIf="kind === 'correct'"
+  class="feedback-bar feedback-bar--good"
+  role="alert"
+>
+  ✓ Correct
+</div>
+<div
+  *ngIf="kind === 'wrong'"
+  class="feedback-bar feedback-bar--bad"
+  role="alert"
+>
+  ✗ Incorrect
+</div>

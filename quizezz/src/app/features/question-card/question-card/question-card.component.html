@@ -1,0 +1,20 @@
+<article class="question-card" aria-label="Question">
+  <h2 class="question-card__title">
+    {{ question.text }}
+  </h2>
+
+  <div class="question-card__grid">
+    <app-option-button
+      *ngFor="let option of question.options; let index = index"
+      class="question-card__option"
+      [ngClass]="optionVariantClass(index)"
+      [optionIdentifier]="option.id"
+      [state]="getOptionState(option)"
+      [disabled]="isLocked"
+      [scoreDelta]="scoreChange"
+      (choose)="choose.emit($event)"
+    >
+      {{ option.text }}
+    </app-option-button>
+  </div>
+</article>

@@ -1,0 +1,20 @@
+<section class="play-page" aria-label="Play">
+  <div class="play-page__header">
+    <app-score-strip [name]="playerName" [score]="score"></app-score-strip>
+    <div class="play-page__progress">{{ progressLabel }}</div>
+  </div>
+
+  <ng-container *ngIf="question as currentQuestion">
+    <app-question-card
+      [question]="currentQuestion"
+      [selectedIdentifier]="selectedIdentifier"
+      [feedback]="feedback"
+      [isLocked]="isLocked"
+      [scoreChange]="scoreChange"
+      (choose)="onChooseOption($event)"
+    >
+    </app-question-card>
+  </ng-container>
+
+  <app-feedback-bar [kind]="feedback"></app-feedback-bar>
+</section>

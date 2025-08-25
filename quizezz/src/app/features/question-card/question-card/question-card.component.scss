@@ -1,0 +1,15 @@
+.question-card {
+  @apply tw-bg-transparent;
+}
+
+.question-card__title {
+  @apply tw-text-2xl tw-font-semibold tw-mb-6 tw-text-center tw-text-white;
+}
+
+.question-card__grid {
+  @apply tw-grid tw-grid-cols-2 tw-gap-4;
+}
+
+.question-card__option {
+  @apply tw-text-white;
+}

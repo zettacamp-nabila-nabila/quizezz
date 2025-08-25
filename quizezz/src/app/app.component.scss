@@ -1,0 +1,30 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #1b0c24;
+  color: #fff;
+}
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+nav a {
+  color: #fff;
+  opacity: 0.9;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.app-shell__main {
+  @apply tw-min-h-[calc(100vh-56px)] tw-bg-[#1b0c24] tw-bg-opacity-95 tw-flex tw-justify-center tw-items-start;
+}
+.app-shell__container {
+  @apply tw-w-full tw-max-w-[960px] tw-p-6;
+}

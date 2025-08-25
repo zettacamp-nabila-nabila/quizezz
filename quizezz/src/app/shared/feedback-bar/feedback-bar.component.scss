@@ -1,0 +1,9 @@
+.feedback-bar {
+  @apply tw-fixed tw-left-0 tw-right-0 tw-bottom-0 tw-text-center tw-text-white tw-font-bold tw-py-2;
+}
+.feedback-bar--good {
+  @apply tw-bg-green-600;
+}
+.feedback-bar--bad {
+  @apply tw-bg-red-600;
+}

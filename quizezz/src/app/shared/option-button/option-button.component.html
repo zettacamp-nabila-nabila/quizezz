@@ -1,0 +1,24 @@
+<button
+  type="button"
+  class="option-btn"
+  [disabled]="disabled"
+  (click)="onChoose()"
+  (keyup.enter)="onChoose()"
+  (keyup.space)="onChoose()"
+  [attr.aria-disabled]="disabled"
+  [class.option-btn--correct]="state === 'correct'"
+  [class.option-btn--wrong]="state === 'wrong'"
+  [attr.data-state]="state"
+>
+  <ng-content></ng-content>
+
+  <span
+    *ngIf="state === 'correct' && scoreDelta"
+    class="option-btn__score option-btn__score--pop"
+  >
+    +{{ scoreDelta }}
+  </span>
+  
+  <span class="tw-sr-only" *ngIf="state === 'correct'">Correct</span>
+  <span class="tw-sr-only" *ngIf="state === 'wrong'">Incorrect</span>
+</button>

@@ -1,0 +1,29 @@
+<form
+  class="name-form"
+  #form="ngForm"
+  (ngSubmit)="onSubmit()"
+  data-test-id="name-form"
+>
+  <div class="name-form__field">
+    <input
+      class="name-form__input"
+      [(ngModel)]="playerName"
+      name="playerName"
+      placeholder="Enter your name"
+      required
+      aria-label="Player name"
+    />
+  </div>
+
+  <div class="name-form__actions">
+    <button
+      class="name-form__button"
+      type="submit"
+      (click)="onSubmit()"
+      [disabled]="form.invalid"
+      [class.name-form__button--disabled]="form.invalid"
+    >
+      Join
+    </button>
+  </div>
+</form>

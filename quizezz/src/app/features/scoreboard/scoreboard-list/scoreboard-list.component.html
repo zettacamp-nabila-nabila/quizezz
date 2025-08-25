@@ -1,0 +1,20 @@
+<div class="scoreboard-list" role="table" aria-label="Scoreboard list">
+  <div class="scoreboard-list__head" role="row">
+    <span class="scoreboard-list__header-cell">#</span>
+    <span class="scoreboard-list__header-cell">Name</span>
+    <span
+      class="scoreboard-list__header-cell scoreboard-list__header-cell--right"
+      >Score</span
+    >
+  </div>
+
+  <div
+    class="scoreboard-list__row"
+    role="row"
+    *ngFor="let entry of items; index as index"
+  >
+    <strong class="scoreboard-list__rank">#{{ index + 1 }}</strong>
+    <span class="scoreboard-list__name">{{ entry.name }}</span>
+    <strong class="scoreboard-list__score">{{ entry.score }}</strong>
+  </div>
+</div>
